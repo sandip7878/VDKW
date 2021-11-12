@@ -1,0 +1,7 @@
+{
+  "name": "VDKW",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
