@@ -1,0 +1,23 @@
+<ion-header>
+  <img src="../../assets/image/title-image.png" style="width: 100%;">
+</ion-header>
+
+<ion-content>
+
+  <ion-grid style="padding: 5px 0px;height: 90%;">
+    <ion-row *ngFor="let media of mediaList; let i=index" style="border-bottom: 1px solid #555;">
+      <ion-col size="12">
+        <p style="text-align: center;">{{media.title}}</p>
+      </ion-col>
+      <ion-col size="12" style="padding: 0px;" style="text-align: center;">
+        <!-- <audio controls>
+          <source [src]="media.audio" type="audio/mp3">
+        </audio> -->
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div style="position: fixed;bottom: -5px;width: 100%;height: 10%;">
+    <img src="../../assets/image/footer.png" style="width: 100%;">
+  </div>
+</ion-content>

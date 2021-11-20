@@ -1,17 +1,66 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <!-- <ion-toolbar>
     <ion-title>
-      Tab 1
+      Home
     </ion-title>
-  </ion-toolbar>
+  </ion-toolbar> -->
+  <img src="../../assets/image/title-image.png" style="width: 100%;">
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" style="--background: #E0E0E0;">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Tab 1</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
+        <div style="text-align: center;">Contact Us</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row style="padding: 25px 10px;background-color: #757575;">
+      <ion-col size="12">
+        <ion-input placeholder="Name" style="background: white;"></ion-input>
+      </ion-col>
+
+      <ion-col size="12">
+        <ion-input placeholder="Email" style="background: white;"></ion-input>
+      </ion-col>
+
+      <ion-col size="12">
+        <ion-input placeholder="Mobile Phone" style="background: white;"></ion-input>
+      </ion-col>
+
+      <ion-col size="12" >
+        <textarea placeholder="Enter Comments" style="background: white;width: 100%;line-height: 2;"></textarea>
+      </ion-col>
+
+      <ion-col size="12">
+        <ion-button style="width: 100%;margin: 0px;">
+          Submit
+        </ion-button>
+      </ion-col>
+
+      <ion-col size="12" style="text-align: center;">
+        <img class="social-icon" (click)="openFbPage()" src="../../assets/image/facebook-logo.png">
+        <img class="social-icon" (click)="openInstaPage()" src="../../assets/image/instagram.png">
+        <img class="social-icon" src="../../assets/image/snapchat.png">
+      </ion-col>
+
+      <ion-col size="12" style="text-align: center;">
+        <img class="social-icon" src="../../assets/image/twitter.png">
+        <img class="social-icon" (click)="sendMessageInWP()" src="../../assets/image/whatsapp.png">
+        <img class="social-icon" (click)="openLinkedinPage()" src="../../assets/image/linkedin.png">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div style="position: fixed;bottom: -5px;">
+    <img src="../../assets/image/footer.png" style="width: 100%;">
+  </div>
 </ion-content>
